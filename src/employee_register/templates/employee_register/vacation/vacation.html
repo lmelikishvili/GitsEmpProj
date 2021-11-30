@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<title>შვებულების მოთხოვნის ფორმა</title>
+<style type="text/css">@media print{.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link type="text/css" rel="stylesheet" href="https://cdn01.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?themeRevisionID=5f30e2a790832f3e96009402"/>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<body>
+  <form action="" method="post"  accept-charset="utf-8">
+    {% csrf_token %}
+   
+    <div class="form-all jumbotron" style="margin-top: 0px; padding-top: 0px;">
+
+      <style>
+        .form-all:before { 
+          background: none;
+        }
+      </style>
+      <ul class="form-section page-section">
+        <li id="cid_1" class="form-input-wide" data-type="control_head">
+          <div class="form-header-group  header-large">
+            <div class="header-text httal htvam">
+              <h1 id="header_1" class="form-header" data-component="header">
+                შვებულების ფორმა
+              </h1>
+              <div id="subHeader_1" class="form-subHeader">
+                შეიყვანეთ თქვენი შვებულების მოთხოვნის დეტალები
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_fullname" id="id_3">
+          <label class="form-label form-label-top form-label-auto" id="label_3" for="first_3"> სახელი </label>
+          <div id="cid_3" class="form-input-wide" data-layout="full">
+            <div data-wrapper-react="true">
+              <span class="form-sub-label-container" style="vertical-align:top" data-input-type="first">
+                <input type="text" id="first_3" name="q3_input3[first]" class="form-textbox" size="10" value="" data-component="first" aria-labelledby="label_3 sublabel_3_first" />
+                <label class="form-sub-label" for="first_3" id="sublabel_3_first" style="min-height:13px" aria-hidden="false"> სახელი </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top" data-input-type="last">
+                <input type="text" id="last_3" name="q3_input3[last]" class="form-textbox" size="15" value="" data-component="last" aria-labelledby="label_3 sublabel_3_last" />
+                <label class="form-sub-label" for="last_3" id="sublabel_3_last" style="min-height:13px" aria-hidden="false"> გვარი </label>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_phone" id="id_6">
+          <label class="form-label form-label-top form-label-auto" id="label_6" for="input_6_area"> მობილურის ნომერი </label>
+          <div id="cid_6" class="form-input-wide" data-layout="half">
+            <div data-wrapper-react="true">
+              <span class="form-sub-label-container" style="vertical-align:top" data-input-type="areaCode">
+                <input type="tel" id="input_6_area" name="q6_input6[area]" class="form-textbox" value="" data-component="areaCode" aria-labelledby="label_6 sublabel_6_area" />
+                <span class="phone-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="input_6_area" id="sublabel_6_area" style="min-height:13px" aria-hidden="false"> საქალაქთაშორისო კოდი </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top" data-input-type="phone">
+                <input type="tel" id="input_6_phone" name="q6_input6[phone]" class="form-textbox" value="" data-component="phone" aria-labelledby="label_6 sublabel_6_phone" />
+                <label class="form-sub-label" for="input_6_phone" id="sublabel_6_phone" style="min-height:13px" aria-hidden="false"> მობილურის ნომერი </label>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_textbox" id="id_4">
+          <label class="form-label form-label-top form-label-auto" id="label_4" for="input_4"> პოზიცია </label>
+          <div id="cid_4" class="form-input-wide" data-layout="half">
+            <input type="text" id="input_4" name="q4_input4" data-type="input-textbox" class="form-textbox" style="width:310px" size="310" value="" placeholder=" " data-component="textbox" aria-labelledby="label_4" />
+          </div>
+        </li>
+        <li class="form-line" data-type="control_textbox" id="id_5">
+          <label class="form-label form-label-top form-label-auto" id="label_5" for="input_5"> მენეჯერი </label>
+          <div id="cid_5" class="form-input-wide" data-layout="half">
+            <input type="text" id="input_5" name="q5_input5" data-type="input-textbox" class="form-textbox" style="width:310px" size="310" value="" placeholder=" " data-component="textbox" aria-labelledby="label_5" />
+          </div>
+        </li>
+        <li id="cid_8" class="form-input-wide" data-type="control_head">
+          <div class="form-header-group  header-small">
+            <div class="header-text httal htvam">
+              <h3 id="header_8" class="form-header" data-component="header">
+                შვებულების დეტალები
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_datetime" id="id_10">
+          <label class="form-label form-label-top form-label-auto" id="label_10" for="month_10"> შვებულების დასაწყისი </label>
+          <div id="cid_10" class="form-input-wide" data-layout="half">
+            <div data-wrapper-react="true" class="extended notLiteMode">
+              <span class="form-sub-label-container month" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_10" name="q10_input10[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="08" autoComplete="off" aria-labelledby="label_10 sublabel_10_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_10" id="sublabel_10_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container day" style="vertical-align:top">
+                <input type="tel" class="currentDate form-textbox validate[limitDate]" id="day_10" name="q10_input10[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="11" autoComplete="off" aria-labelledby="label_10 sublabel_10_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_10" id="sublabel_10_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container year" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_10" name="q10_input10[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2021" autoComplete="off" aria-labelledby="label_10 sublabel_10_year" />
+                <label class="form-sub-label" for="year_10" id="sublabel_10_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <img class=" newDefaultTheme-dateIcon icon-seperatedMode" alt="Pick a Date" id="input_10_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+                <label class="form-sub-label" for="input_10_pick" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" aria-hidden="true"> Date Picker Icon </label>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_datetime" id="id_11">
+          <label class="form-label form-label-top form-label-auto" id="label_11" for="month_11"> შვებულების დასასრული </label>
+          <div id="cid_11" class="form-input-wide" data-layout="half">
+            <div data-wrapper-react="true" class="extended notLiteMode">
+              <span class="form-sub-label-container month" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="month_11" name="q11_input11[month]" size="2" data-maxlength="2" data-age="" maxLength="2" value="08" autoComplete="off" aria-labelledby="label_11 sublabel_11_month" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="month_11" id="sublabel_11_month" style="min-height:13px" aria-hidden="false"> Month </label>
+              </span>
+              <span class="form-sub-label-container day" style="vertical-align:top">
+                <input type="tel" class="currentDate form-textbox validate[limitDate]" id="day_11" name="q11_input11[day]" size="2" data-maxlength="2" data-age="" maxLength="2" value="11" autoComplete="off" aria-labelledby="label_11 sublabel_11_day" />
+                <span class="date-separate" aria-hidden="true">
+                   -
+                </span>
+                <label class="form-sub-label" for="day_11" id="sublabel_11_day" style="min-height:13px" aria-hidden="false"> Day </label>
+              </span>
+              <span class="form-sub-label-container year" style="vertical-align:top">
+                <input type="tel" class="form-textbox validate[limitDate]" id="year_11" name="q11_input11[year]" size="4" data-maxlength="4" data-age="" maxLength="4" value="2021" autoComplete="off" aria-labelledby="label_11 sublabel_11_year" />
+                <label class="form-sub-label" for="year_11" id="sublabel_11_year" style="min-height:13px" aria-hidden="false"> Year </label>
+              </span>
+              <span class="form-sub-label-container" style="vertical-align:top">
+                <img class=" newDefaultTheme-dateIcon icon-seperatedMode" alt="Pick a Date" id="input_11_pick" src="https://cdn.jotfor.ms/images/calendar.png" data-component="datetime" aria-hidden="true" data-allow-time="No" data-version="v2" />
+                <label class="form-sub-label" for="input_11_pick" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap" aria-hidden="true"> Date Picker Icon </label>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_radio" id="id_9">
+          <label class="form-label form-label-top form-label-auto" id="label_9" for="input_9"> შვებულების ტიპი </label>
+          <div id="cid_9" class="form-input-wide" data-layout="full">
+            <div class="form-single-column" role="group" aria-labelledby="label_9" data-component="radio">
+              <span class="form-radio-item" style="clear:left">
+                <span class="dragger-item">
+                </span>
+                <input type="radio" aria-describedby="label_9" class="form-radio" id="input_9_0" name="q9_input9" value="არდადეგები" />
+                <label id="label_input_9_0" for="input_9_0"> არდადეგები </label>
+              </span>
+              <span class="form-radio-item" style="clear:left">
+                <span class="dragger-item">
+                </span>
+                <input type="radio" aria-describedby="label_9" class="form-radio" id="input_9_1" name="q9_input9" value="ავადმყოფობა" />
+                <label id="label_input_9_1" for="input_9_1"> ავადმყოფობა </label>
+              </span>
+              <span class="form-radio-item formRadioOther" style="clear:left">
+                <input type="radio" class="form-radio-other form-radio" name="q9_input9" id="other_9" value="other" aria-label="სხვა" />
+                <label id="label_other_9" style="text-indent:0" for="other_9"> სხვა </label>
+                <span id="other_9_input" class="other-input-container" style="display:none">
+                  <input type="text" class="form-radio-other-input form-textbox" name="q9_input9[other]" data-otherhint="სხვა" size="15" id="input_9" data-placeholder="Please type another option here" placeholder="Please type another option here" />
+                </span>
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_textarea" id="id_12">
+          <label class="form-label form-label-top form-label-auto" id="label_12" for="input_12"> კომენტარები </label>
+          <div id="cid_12" class="form-input-wide" data-layout="full">
+            <textarea id="input_12" class="form-textarea" name="q12_input12" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_12"></textarea>
+          </div>
+        </li>
+        <li class="form-line" data-type="control_button" id="id_14">
+          <div id="cid_14" class="form-input-wide" data-layout="full">
+            <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField">
+              <button id="input_14" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField" data-component="button" data-content="">
+                Submit
+              </button>
+            </div>
+          </div>
+        </li>
+        <li style="display:none">
+          Should be Empty:
+          <input type="text" name="website" value="" />
+        </li>
+      </ul>
+    </div>
+  </form>
+</body>
+
+{% endblock content %}
